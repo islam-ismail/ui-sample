@@ -1,0 +1,754 @@
+/* general style*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ' Montserrat ' ,sans-serif;
+}
+
+.container {
+    
+    margin: auto;
+}
+.clearfix {
+    clear: both;
+}
+
+/* Header section style*/
+
+.header {
+    height: 650px;
+    background: url('../images/header-bg.jpg') no-repeat;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.header .header-head {
+    padding: 2% 8% 0 8%;
+}
+
+.header .header-head img {
+    float: left;
+}
+
+.header .header-head nav {
+    float: right;
+}
+
+.header .header-head nav ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.header .header-head nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.header .header-head nav ul li a:hover {
+    color: darkslateblue;
+}
+
+.header .header-content {
+    width: 40%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+
+.header .header-content h1 {
+    font-size: 50px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+.header .header-content p {
+   font-size: 20px;
+   color: white; 
+   margin-bottom: 2%;
+}
+
+.header .header-content button {
+    width: 150px;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    font-size: 12px;
+    margin-left: 2%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header .header-content button:last-child {
+    background: #8be2e5;
+    color: white;
+}
+
+.header .header-content button:last-child:hover {
+    background: darkcyan;
+}
+
+.header .header-animat {
+    width: 30px;
+    height: 48px;
+    position: absolute;
+    bottom: 15%;
+    left: 49.5%;
+    border: 2px solid white;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.header .header-animat .scroll {
+    width: 5px;
+    height: 10px;
+    margin: auto;
+    background: white;
+    position: relative;
+    top: 4px;
+    border-radius: 2px;
+    animation: scrolling 1s ease-in-out infinite;
+}
+
+@keyframes scrolling {
+    0% {
+        opacity: 0;
+        top: 5px;
+    }
+    30% {
+        opacity: 1;
+        top: 10px;
+    }
+    100% {
+        opacity: 0;
+        top: 25px;
+    }
+}
+
+/* Be first section style*/
+
+section.be-first {
+    height: 650px;
+    background: url('../images/be-the-first-bg.jpg') no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 10%;
+    text-align: center;
+    margin-bottom: 18%;
+}
+
+section.be-first .be-first-center h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+section.be-first .be-first-center p {
+    color: white;
+    margin: 2% 0;
+    font-size: 25px;
+}
+
+section.be-first .be-first-img {
+    text-align: center;
+}
+
+section.be-first .be-first-img img {
+    width: 30%;
+}
+
+/* Feature section style*/
+
+section.feature {
+     padding: 0 5% 20% 5%;  
+} 
+
+section.feature .feature-one {
+    width: 30%;
+    margin-left: 5%;
+    float: left;
+}
+section.feature .feature-one:nth-of-type(1) {
+    margin-left: 0;
+}
+
+section.feature .feature-one:nth-of-type(1) hr {
+    height: 5px;
+    background: #6d3f96;
+    border: 0;
+}
+section.feature .feature-one:nth-of-type(2) hr {
+    height: 5px;
+    background: #70cbce;
+    border: 0;
+}
+section.feature .feature-one:nth-of-type(3) hr {
+    height: 5px;
+    background: #fdc05d;
+    border: 0;
+}
+
+
+section.feature .feature-one h2 {
+    font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+section.feature .feature-one p {
+    color: #929496;
+    line-height: 1.5;
+}
+
+/* pricing section style*/
+
+section.pricing {
+    padding: 10% 0;
+    background: #70cbce;
+    text-align: center;
+    height: auto;
+}
+
+section.pricing h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 2%;
+}
+
+section.pricing p {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 3%; 
+}
+
+section.pricing .pricing-flex {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content:center;
+}
+
+section.pricing .pricing-flex .pricing-flex-item {
+    width: 30%;
+}
+
+section.pricing .pricing-flex .pricing-flex-item:nth-of-type(1),
+section.pricing .pricing-flex .pricing-flex-item:nth-of-type(3) {
+    margin-top: 2%;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul {
+    list-style: none;
+    background: white;
+    border-radius: 10px;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul:hover {
+    margin-top: -10px;
+    transition: all 0.5s ease-in-out;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul li.price {
+    background: black;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.5s ease-in-out;
+}
+section.pricing .pricing-flex .pricing-flex-item ul li.price:hover {
+    background: #231f20;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul li.doller {
+    background: black ;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+    transition: all 0.5s ease-in-out;
+}
+section.pricing .pricing-flex .pricing-flex-item ul li.doller:hover {
+    background: #231f20 ;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul li.doller small {
+    font-weight: normal;
+    color: #929496;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul li.list {
+      padding: 20px;
+      border-bottom: 1px dotted #cccccc75;
+      font-weight: bold;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul li.content {
+    color: #929496;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: normal;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul li.btn {
+    padding: 15px;
+    color: #70cbce;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+section.pricing .pricing-flex .pricing-flex-item ul li.btn:hover {
+    background: #cccccc94;
+}
+
+/* Invite section style*/
+
+section.invite {
+    height: auto;
+    padding: 10% 0;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+section.invite i {
+    color: #70cbce;
+    border: 2px solid #70cbce;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 2%;
+}
+
+section.invite h2 {
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+section.invite p {
+    margin-bottom: 2%;
+}
+
+section.invite input {
+    display: block;
+    margin: auto;
+    width: 18%;
+    height: 40px;
+    border: 0;
+    outline: 0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+section.invite input::-webkit-input-placeholder {
+    color: #aaa;
+}
+
+section.invite button {
+    width: 10%;
+    height: 50px;
+    background: #70cbce;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+}
+section.invite button:hover {
+    background: darkslateblue;
+}
+
+/* Informtaion section style*/
+
+section.info {
+    padding: 10%;
+}
+
+section.info .info-desc {
+    width: 70%;
+    margin: auto;
+} 
+
+section.info .info-desc .info-img {
+    width: 20%;
+    float: left;
+}
+
+section.info .info-desc .info-information {
+    width: 80%;
+    float: right;
+}
+section.info .info-desc .info-information span {
+    font-weight: bold;
+}
+section.info hr {
+    width: 80%;
+    margin: auto;
+    background: #92949687;
+}
+
+/* Footer section style*/
+ footer .footer-left {
+     float: left;
+     margin: 0 0 5% 1%;
+ }
+ footer .footer-left i {
+    cursor: pointer;
+}
+ footer .footer-left span {
+     padding-right: 15px;
+ }
+
+ footer .footer-right {
+     float: right;
+     margin: 0 1% 5% 0;     
+ }
+
+ footer .footer-right span {
+     color: #ccc;
+ }
+
+                                          /*======== Media Query ========*/
+
+ /* Media Queryfor devices between 1000px and 810px */
+ @media (max-width:1000px) and (min-width:810px){
+
+    /*First section*/
+
+    section.be-first {
+        height: 450px;
+        margin-bottom: 15%;
+    }
+    
+    section.be-first .be-first-center p {
+        font-size: 20px;
+    }
+
+    /*Feature section*/
+    section.feature {
+        margin-bottom: 8%;
+   }
+   
+   /* pricing section style*/
+
+    section.pricing .pricing-flex {
+        width: 100%;
+   }
+
+   /* Invite section style*/
+
+    section.invite h2 {
+        font-size: 30px;
+    }
+
+    section.invite input {
+        width: 25%;
+        height: 20%;
+    }
+
+    section.invite button {
+        width: 15%;
+        height: 20%;
+        padding: 1% 0%;
+        font-size: 12px;
+    }
+
+    /* Informtaion section style*/
+
+    section.info .info-desc {
+        width: 90%;
+    } 
+
+    section.info .info-desc .info-img {
+        width: 15%;
+        float: left;
+        margin-right: 2%;
+    }
+
+    section.info .info-desc .info-information {
+        width: 70%;
+        float: right;
+    }
+    section.info hr {
+        width: 90%;
+    }
+    /* Footer section style*/
+    footer .footer-left {
+        float: left;
+        margin: 0 0 5% 1%;
+    }
+    footer .footer-left span {
+        padding-right: 15px;
+    }
+
+    footer .footer-right {
+        float: right;
+        margin: 0 1% 5% 0;     
+    }
+
+    footer .footer-right span {
+        color: #ccc;
+    }
+
+  }
+
+ /* Media Queryfor devices less than 809px and 620px */
+ @media (max-width: 809px) {
+    
+            /*Header section*/
+
+        .header .header-content h1 {
+            font-size: 30px;
+        }
+        
+        .header .header-content p {
+        font-size: 15px;
+        }
+        
+        .header .header-content button {
+            width: 40%;
+            font-size: 10px;
+        }
+        
+        .header .header-animat {
+            width: 4%;
+            height: 7%;
+            left: 48%;
+        }
+
+        /*First section*/
+
+        section.be-first {
+            height: 320px;
+            margin-bottom: 20%;
+        }
+        
+        section.be-first .be-first-center p {
+            font-size: 15px;
+        }
+    
+        /*Feature section*/
+        section.feature {
+            margin-bottom: 30%;
+       }
+       
+       /* pricing section style*/
+
+        section.pricing p {
+            margin: 0 2%;
+        }
+    
+        section.pricing .pricing-flex {
+            width: 100%;
+       }
+
+       section.pricing .pricing-flex .pricing-flex-item ul li.content {
+           font-size: 12px;
+       }
+    
+    
+        /* Informtaion section style*/
+    
+        section.info .info-desc {
+            width: 90%;
+        } 
+    
+        section.info .info-desc .info-img {
+            width: 20%;
+            float: left;
+            margin-right: 2%;
+        }
+    
+        section.info .info-desc .info-information {
+            width: 70%;
+            float: right;
+            padding-left: 5%;
+        }
+        section.info hr {
+            width: 90%;
+        }
+
+           /* Invite section style*/
+
+        section.invite h2 {
+            font-size: 30px;
+        }
+
+        section.invite input {
+            width: 25%;
+            height: 20%;
+        }
+
+        section.invite button {
+            width: 15%;
+            height: 20%;
+            padding: 1% 0%;
+            font-size: 12px;
+        }
+        
+        /* Footer section style*/
+        footer .footer-left {
+            float: left;
+            margin: 0 0 5% 5%;
+        }
+        footer .footer-left span {
+            padding-right: 15px;
+        }
+    
+        footer .footer-right {
+            float: right;
+            margin: 0 1% 5% 0;     
+        }
+    
+        footer .footer-right span {
+            color: #ccc;
+        }
+
+    }
+
+ /* Media Queryfor devices less than 620px  */
+ @media (max-width:620px){
+
+                /* Header section style*/
+
+            .header .header-head nav ul li a{
+                font-size: 20px;
+            }
+            .header .header-content h1 {
+                font-size: 20px;
+            }
+            
+            .header .header-content p {
+            font-size: 10px;
+            }
+            
+            .header .header-content button {
+                width: 55%;
+                padding: 5% 2%;
+            }
+            .header .header-content button:last-child {
+                margin-top: 2%;
+            }
+            
+            .header .header-animat {
+                width: 5%;
+                height: 6%;
+                bottom: 20%;
+            }
+
+            /*First section*/
+
+            section.be-first {
+                height: 250px;
+                margin-bottom: 22%;
+            }
+            section.be-first .be-first-center h1 {
+                font-size: 30px;
+            }
+            
+            section.be-first .be-first-center p {
+                font-size: 10px;
+            }
+        
+            /*Feature section*/
+            section.feature {
+                margin-bottom: 30%;
+            }
+
+            section.feature .feature-one h2 {
+            font-size: 10px;
+            }
+        
+            section.feature .feature-one p {
+             font-size: 10px;
+            }
+        
+
+           /* pricing section style*/
+    
+            section.pricing p {
+                margin: 0 2%;
+                font-size: 10px;
+            }
+        
+            section.pricing .pricing-flex {
+                width: 100%;
+           }
+    
+           section.pricing .pricing-flex .pricing-flex-item ul li.content {
+               font-size: 8px;
+           }
+           section.pricing .pricing-flex .pricing-flex-item ul li.list {
+               font-size: 8px;
+               padding: 10px;
+           }
+
+           section.pricing .pricing-flex .pricing-flex-item ul li.btn {
+            padding: 10px;
+            font-size: 10px;
+           }
+
+               
+               /* Invite section style*/
+    
+               section.invite h2 {
+                font-size: 25px;
+            }
+            section.invite p {
+                font-size: 12px;
+            }
+    
+            section.invite input {
+                width: 50%;
+            }
+    
+            section.invite button {
+                width: 20%;
+                padding: 1% 0%;
+                font-size: 10px;
+            }
+        
+        
+            /* Informtaion section style*/
+        
+            section.info .info-desc {
+                width: 100%;
+            } 
+        
+            section.info .info-desc .info-information {
+                width: 50%;
+            }
+            section.info .info-desc .info-information p {
+                font-size: 12px;
+            }
+            section.info .info-desc .info-information span {
+                font-size: 10px;
+            }
+            section.info hr {
+                width: 95%;
+            }
+            
+            /* Footer section style*/
+            footer .footer-left {
+                text-align: center;
+                font-size: 15px;
+                padding-right: 10%;
+                width: 100%;
+            }
+
+            footer .footer-right {
+                text-align: center;
+                font-size: 12px;
+                width: 100%;
+            }
+        }
+
